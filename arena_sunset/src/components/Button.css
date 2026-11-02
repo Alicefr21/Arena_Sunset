@@ -1,0 +1,29 @@
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 16px;
+  font-family: inherit;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  color: #0A2540;
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 380px) {
+  .button {
+    max-width: 100%;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,113 @@
+
+.diferenciais {
+  padding: 90px 8%;
+  background-color: #0A2540;
+  color: #FDF5E6;
+}
+
+.diferenciais-conteudo {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 64px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.diferenciais-intro h2 {
+  font-size: 46px;
+  line-height: 1.15;
+  margin: 0 0 24px;
+  color: #FDF5E6;
+}
+
+.diferenciais-intro p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0 0 32px;
+  color: #FDF5E6;
+}
+
+
+.diferenciais-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.diferencial-card {
+  min-height: 190px;
+  padding: 28px 24px;
+  border-radius: 14px;
+  background-color: #FDF5E6;
+  color: #0A2540;
+}
+
+.diferencial-card h3 {
+  font-size: 19px;
+  line-height: 1.4;
+  margin: 0 0 14px;
+}
+
+.diferencial-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+  color: #48515e;
+}
+
+@media (max-width: 900px) {
+  .diferenciais {
+    padding: 70px 6%;
+  }
+
+  .diferenciais-conteudo {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .diferenciais-intro h2 {
+    font-size: 40px;
+  }
+
+  .diferenciais-grid {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .diferenciais {
+    padding: 50px 6%;
+  }
+
+  .diferenciais-conteudo {
+    gap: 30px;
+  }
+
+  .diferenciais-intro h2 {
+    font-size: 32px;
+  }
+
+  .diferenciais-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .diferenciais-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .diferencial-card {
+    min-height: auto;
+    padding: 24px 20px;
+  }
+
+  .diferencial-card h3 {
+    font-size: 18px;
+  }
+
+  .diferencial-card p {
+    font-size: 14px;
+  }
+}

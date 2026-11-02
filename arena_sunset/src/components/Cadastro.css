@@ -1,0 +1,132 @@
+
+.cadastro {
+  padding: 90px 8%;
+  background-color: #f4ead8;
+  color: #101c2c;
+}
+
+.cadastro-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cadastro-intro h2 {
+  font-size: 46px;
+  line-height: 1.15;
+  margin: 0 0 24px;
+  color: #101c2c;
+}
+
+.cadastro-intro p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0 0 24px;
+  color: #48515e;
+}
+
+.cadastro-formulario {
+  padding: 36px;
+  background-color: #101c2c;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(16, 28, 44, 0.18);
+  color: white;
+}
+
+.cadastro-formulario h2 {
+  font-size: 26px;
+  margin: 0 0 28px;
+  color: #f4ead8;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.campo label {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.campo label span {
+  color: #FF6F00;
+}
+
+.campo input,
+.campo select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #526071;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #101c2c;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.campo input::placeholder {
+  color: #89919b;
+}
+
+.campo input:focus,
+.campo select:focus {
+  border-color: #FF6F00;
+  box-shadow: 0 0 0 2px rgba(255, 111, 0, 0.2);
+}
+
+.mensagem-sucesso,
+.mensagem-erro {
+  padding: 12px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 20px 0 0;
+}
+
+.mensagem-sucesso {
+  background-color: #fafcef;
+  color: #1B5E20;
+}
+
+.mensagem-erro {
+  background-color: #FDECEC;
+  color: #C62828;
+}
+
+@media (max-width: 768px) {
+  .cadastro {
+    padding: 60px 6%;
+  }
+
+  .cadastro-conteudo {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .cadastro-intro h2 {
+    font-size: 36px;
+  }
+
+  .cadastro-formulario {
+    padding: 26px 22px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cadastro-intro h2 {
+    font-size: 30px;
+  }
+
+  .cadastro-formulario {
+    padding: 22px 16px;
+  }
+}
