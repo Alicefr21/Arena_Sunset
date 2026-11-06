@@ -21,6 +21,21 @@
   opacity: 0.85;
 }
 
+#cadastrar-btn {
+  background-color: #0A2540;
+  color: white;
+}
+
+#cadastro-btn{
+  background-color: #FF6F00;
+  color: white;
+}
+
+#entrar-btn{
+  background-color: #FF6F00;
+  color: white;
+}
+
 @media (max-width: 380px) {
   .button {
     max-width: 100%;
